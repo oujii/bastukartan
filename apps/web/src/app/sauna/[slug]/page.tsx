@@ -47,7 +47,8 @@ async function getSaunaBySlug(slug: string): Promise<Sauna | null> {
 }
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const sauna = await getSaunaBySlug(params.slug);
+  const { slug } = await params;
+  const sauna = await getSaunaBySlug(slug);
   
   if (!sauna) {
     return {
@@ -82,7 +83,8 @@ export async function generateStaticParams() {
 }
 
 export default async function SaunaDetailPage({ params }: PageProps) {
-  const sauna = await getSaunaBySlug(params.slug);
+  const { slug } = await params;
+  const sauna = await getSaunaBySlug(slug);
   
   if (!sauna) {
     notFound();
