@@ -1,0 +1,40 @@
+{
+  "name": "stockholm-sauna-directory",
+  "version": "1.0.0",
+  "description": "The most comprehensive directory of saunas in Stockholm",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=apps/web",
+    "build": "npm run build --workspace=apps/web",
+    "start": "npm run start --workspace=apps/web",
+    "lint": "npm run lint --workspace=apps/web",
+    "test": "npm run test --workspace=apps/web",
+    "type-check": "npm run type-check --workspace=apps/web"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/your-username/stockholm-sauna-directory.git"
+  },
+  "keywords": [
+    "sauna",
+    "stockholm",
+    "directory",
+    "wellness",
+    "nextjs",
+    "supabase"
+  ],
+  "author": "Stockholm Sauna Directory Team",
+  "license": "MIT"
+}

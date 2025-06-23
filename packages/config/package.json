@@ -1,0 +1,13 @@
+{
+  "name": "@stockholm-sauna/config",
+  "version": "1.0.0",
+  "description": "Centralized configuration for Stockholm Sauna Directory",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}
