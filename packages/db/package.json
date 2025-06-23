@@ -5,12 +5,20 @@
   "main": "index.ts",
   "types": "index.ts",
   "scripts": {
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "migrate": "node migrate.js",
+    "seed": "node seed.js"
   },
   "dependencies": {
-    "@supabase/supabase-js": "^2.43.4"
+    "@stockholm-sauna/config": "*",
+    "@stockholm-sauna/types": "*",
+    "@supabase/supabase-js": "^2.43.4",
+    "@types/mapbox-gl": "^3.4.1",
+    "dotenv": "^16.5.0",
+    "mapbox-gl": "^3.13.0"
   },
   "devDependencies": {
+    "@types/node": "^20.14.2",
     "typescript": "^5.4.5"
   }
 }
